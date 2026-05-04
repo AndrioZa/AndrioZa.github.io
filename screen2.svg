@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="650" viewBox="0 0 380 650">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#0d0d25"/>
+    </linearGradient>
+  </defs>
+  <rect width="380" height="650" fill="url(#bg2)" rx="24"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="380" height="70" fill="#111130" rx="24"/>
+  <rect x="0" y="40" width="380" height="30" fill="#111130"/>
+  <text x="30" y="45" fill="#7b2ff7" font-family="sans-serif" font-size="14" font-weight="bold">←</text>
+  <text x="190" y="45" fill="#fff" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Анализ товара</text>
+  <!-- Product card -->
+  <rect x="20" y="90" width="340" height="100" rx="12" fill="#151530"/>
+  <text x="35" y="115" fill="#00d4ff" font-family="sans-serif" font-size="13" font-weight="bold">27D2 — Спортивный браслет</text>
+  <text x="35" y="138" fill="#888" font-family="sans-serif" font-size="12">Артикул: 27D2</text>
+  <text x="200" y="138" fill="#888" font-family="sans-serif" font-size="12">Категория: Аксессуары</text>
+  <text x="35" y="158" fill="#4a4" font-family="sans-serif" font-size="12">Статус: активен</text>
+  <text x="200" y="158" fill="#fff" font-family="sans-serif" font-size="12">Цена продажи: 4 990 ₽</text>
+  <!-- P&L Section -->
+  <rect x="20" y="205" width="340" height="40" rx="10" fill="#7b2ff722"/>
+  <text x="35" y="230" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold">P&amp;L за март 2026</text>
+  <!-- Items -->
+  <rect x="20" y="255" width="340" height="40" rx="8" fill="none" stroke="#1a1a3e" stroke-width="1"/>
+  <text x="30" y="280" fill="#aaa" font-family="sans-serif" font-size="13">Выручка</text>
+  <text x="330" y="280" fill="#fff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">234 500 ₽</text>
+  <rect x="20" y="295" width="340" height="40" rx="8" fill="none" stroke="#1a1a3e" stroke-width="1"/>
+  <text x="30" y="320" fill="#aaa" font-family="sans-serif" font-size="13">Комиссия WB</text>
+  <text x="330" y="320" fill="#aaa" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">-35 175 ₽</text>
+  <rect x="20" y="335" width="340" height="40" rx="8" fill="none" stroke="#1a1a3e" stroke-width="1"/>
+  <text x="30" y="360" fill="#aaa" font-family="sans-serif" font-size="13">Себестоимость</text>
+  <text x="330" y="360" fill="#aaa" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">-94 000 ₽</text>
+  <rect x="20" y="375" width="340" height="40" rx="8" fill="none" stroke="#1a1a3e" stroke-width="1"/>
+  <text x="30" y="400" fill="#aaa" font-family="sans-serif" font-size="13">Логистика</text>
+  <text x="330" y="400" fill="#aaa" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">-8 760 ₽</text>
+  <rect x="20" y="415" width="340" height="40" rx="8" fill="none" stroke="#1a1a3e" stroke-width="1"/>
+  <text x="30" y="440" fill="#aaa" font-family="sans-serif" font-size="13">Налог УСН 6%</text>
+  <text x="330" y="440" fill="#aaa" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">-14 070 ₽</text>
+  <rect x="20" y="460" width="340" height="40" rx="8" fill="#7b2ff733" stroke="#7b2ff7" stroke-width="1"/>
+  <text x="30" y="485" fill="#4a4" font-family="sans-serif" font-size="14" font-weight="bold">Чистая прибыль</text>
+  <text x="330" y="485" fill="#4a4" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end">82 495 ₽</text>
+  <!-- Unit economics -->
+  <rect x="20" y="520" width="340" height="90" rx="12" fill="#111125"/>
+  <text x="35" y="545" fill="#7b2ff7" font-family="sans-serif" font-size="13" font-weight="bold">📊 Юнит-экономика</text>
+  <text x="35" y="570" fill="#aaa" font-family="sans-serif" font-size="12">Продано: 47 шт</text>
+  <text x="200" y="570" fill="#aaa" font-family="sans-serif" font-size="12">Маржинальность: 39.2%</text>
+  <text x="35" y="593" fill="#aaa" font-family="sans-serif" font-size="12">ROI: 175%</text>
+  <text x="200" y="593" fill="#4a4" font-family="sans-serif" font-size="12">Прибыль на ед: 1 755 ₽</text>
+</svg>

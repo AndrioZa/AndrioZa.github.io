@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="650" viewBox="0 0 380 650">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#0d0d25"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b2ff7"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="380" height="650" fill="url(#bg)" rx="24"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="380" height="70" fill="#111130" rx="24"/>
+  <rect x="0" y="40" width="380" height="30" fill="#111130"/>
+  <text x="190" y="45" fill="#fff" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">WB Аналитика</text>
+  <text x="190" y="62" fill="#888" font-family="sans-serif" font-size="12" text-anchor="middle">Wildberries P&amp;L</text>
+  <!-- Stats row -->
+  <rect x="20" y="90" width="165" height="80" rx="12" fill="#151530"/>
+  <text x="35" y="115" fill="#888" font-family="sans-serif" font-size="11">Выручка</text>
+  <text x="35" y="150" fill="#4a4" font-family="sans-serif" font-size="22" font-weight="bold">587 300 ₽</text>
+  <rect x="195" y="90" width="165" height="80" rx="12" fill="#151530"/>
+  <text x="210" y="115" fill="#888" font-family="sans-serif" font-size="11">Чистая прибыль</text>
+  <text x="210" y="150" fill="#4a4" font-family="sans-serif" font-size="22" font-weight="bold">198 450 ₽</text>
+  <!-- Second row -->
+  <rect x="20" y="185" width="165" height="80" rx="12" fill="#151530"/>
+  <text x="35" y="210" fill="#888" font-family="sans-serif" font-size="11">Товаров продано</text>
+  <text x="35" y="245" fill="#fff" font-family="sans-serif" font-size="22" font-weight="bold">2 847 шт</text>
+  <rect x="195" y="185" width="165" height="80" rx="12" fill="#151530"/>
+  <text x="210" y="210" fill="#888" font-family="sans-serif" font-size="11">Средний чек</text>
+  <text x="210" y="245" fill="#fff" font-family="sans-serif" font-size="22" font-weight="bold">206 ₽</text>
+  <!-- Chart area -->
+  <rect x="20" y="280" width="340" height="120" rx="12" fill="#151530"/>
+  <text x="35" y="305" fill="#7b2ff7" font-family="sans-serif" font-size="13" font-weight="bold">📈 Продажи по дням</text>
+  <!-- Mini chart bars -->
+  <rect x="40" y="370" width="18" height="40" rx="3" fill="#7b2ff7" opacity="0.4"/>
+  <rect x="65" y="340" width="18" height="70" rx="3" fill="#7b2ff7" opacity="0.4"/>
+  <rect x="90" y="355" width="18" height="55" rx="3" fill="#7b2ff7" opacity="0.4"/>
+  <rect x="115" y="330" width="18" height="80" rx="3" fill="#7b2ff7"/>
+  <rect x="140" y="320" width="18" height="90" rx="3" fill="#00d4ff"/>
+  <rect x="165" y="310" width="18" height="100" rx="3" fill="#00d4ff"/>
+  <rect x="190" y="335" width="18" height="75" rx="3" fill="#7b2ff7"/>
+  <rect x="215" y="350" width="18" height="60" rx="3" fill="#7b2ff7" opacity="0.6"/>
+  <rect x="240" y="360" width="18" height="50" rx="3" fill="#7b2ff7" opacity="0.4"/>
+  <rect x="265" y="338" width="18" height="72" rx="3" fill="#7b2ff7" opacity="0.6"/>
+  <rect x="290" y="325" width="18" height="85" rx="3" fill="#7b2ff7"/>
+  <rect x="315" y="340" width="18" height="70" rx="3" fill="#7b2ff7" opacity="0.5"/>
+  <!-- Upload button -->
+  <rect x="20" y="415" width="340" height="50" rx="25" fill="#7b2ff7"/>
+  <text x="190" y="445" fill="#fff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">📁 Загрузить отчёт XLSX</text>
+  <!-- Recent items -->
+  <rect x="20" y="480" width="340" height="60" rx="10" fill="#111125"/>
+  <text x="35" y="505" fill="#aaa" font-family="sans-serif" font-size="12">📦 Товар 27D2</text>
+  <text x="35" y="525" fill="#4a4" font-family="sans-serif" font-size="14" font-weight="bold">91 895 ₽ прибыли</text>
+  <text x="250" y="525" fill="#888" font-family="sans-serif" font-size="11">Маржа: 39.2%</text>
+  <rect x="20" y="548" width="340" height="60" rx="10" fill="#111125"/>
+  <text x="35" y="573" fill="#aaa" font-family="sans-serif" font-size="12">📦 Товар 38A5</text>
+  <text x="35" y="593" fill="#4a4" font-family="sans-serif" font-size="14" font-weight="bold">37 200 ₽ прибыли</text>
+  <text x="250" y="593" fill="#888" font-family="sans-serif" font-size="11">Маржа: 22.5%</text>
+</svg>

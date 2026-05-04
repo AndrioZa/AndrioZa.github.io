@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Андрей Зарубо — Мультиагентная AI-система</title>
+<meta name="description" content="Андрей Зарубо — AI-автоматизация для бизнеса на Wildberries. P&L, юнит-экономика, мультиагентные AI-системы. 4+ года на WB.">
+<meta name="keywords" content="AI автоматизация, Wildberries аналитика, P&L Wildberries, юнит-экономика, AI агенты, Telegram бот, DeepSeek">
+<meta name="author" content="Андрей Зарубо">
+<meta property="og:title" content="Андрей Зарубо — AI-автоматизация бизнеса">
+<meta property="og:description" content="AI-аналитика для Wildberries. P&L, юнит-экономика, мультиагентные системы. 4+ года на WB.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hegimeyutig.beget.app/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Андрей Зарубо",
+  "description": "AI-управленец. Автоматизация бизнеса на Wildberries через AI-агентов.",
+  "url": "https://hegimeyutig.beget.app/portfolio/",
+  "knowsAbout": ["AI", "Wildberries", "Python", "PostgreSQL", "Telegram Bot API"]
+}
+</script>
+<title>Андрей Зарубо — Мультиагентная AI-система</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.7}
+  .container{max-width:800px;margin:0 auto;padding:40px 24px;position:relative;z-index:1}
+  .back{display:inline-block;color:#7b2ff7;margin-bottom:24px;font-size:0.95em}
+  .back:hover{text-decoration:underline}
+  
+  .hero{text-align:center;padding:20px 0 30px}
+  .hero h1{font-size:2em;background:linear-gradient(135deg,#2ed573,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+  .hero .sub{color:#888;font-size:1em}
+  .hero .tag{display:inline-block;padding:6px 18px;border:1px solid #2ed57344;border-radius:20px;color:#2ed573;font-size:0.9em;margin-top:10px}
+
+  .section-title{font-size:1.15em;color:#2ed573;margin:32px 0 14px;border-bottom:1px solid #1a1a2e;padding-bottom:8px}
+  
+  .block{background:#111120;border:1px solid #1a1a2e;border-radius:12px;padding:22px;margin:14px 0}
+  .block p{color:#bbb;margin-top:8px}
+  .block p:first-child{margin-top:0}
+  
+  /* Architecture diagram */
+  .arch{background:linear-gradient(135deg,#0a1a1a,#111130);border:1px solid #2ed57333;border-radius:16px;padding:30px 20px;margin:14px 0;text-align:center}
+  .arch h3{color:#fff;font-size:1em;margin-bottom:20px}
+  .arch-level{padding:16px;border-radius:12px;margin:10px 0;max-width:400px;margin-left:auto;margin-right:auto}
+  .arch-level.ceo{background:#7b2ff722;border:1px solid #7b2ff7}
+  .arch-level.dir{background:#00d4ff22;border:1px solid #00d4ff}
+  .arch-level.agent{background:#2ed57322;border:1px solid #2ed573}
+  .arch-level h4{font-size:1em;margin-bottom:4px}
+  .arch-level p{font-size:0.82em;color:#aaa}
+  .arch-arrow{color:#555;font-size:1.2em;margin:4px 0}
+  .arch-level.ceo h4{color:#7b2ff7}
+  .arch-level.dir h4{color:#00d4ff}
+  .arch-level.agent h4{color:#2ed573}
+  
+  .agent-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+  @media(max-width:600px){.agent-grid{grid-template-columns:1fr}}
+  .agent-card{background:#111120;border:1px solid #1a1a2e;border-radius:12px;padding:18px;transition:.3s}
+  .agent-card:hover{border-color:#2ed57366;transform:translateY(-2px)}
+  .agent-card h4{color:#fff;font-size:0.95em;margin-bottom:4px}
+  .agent-card p{color:#999;font-size:0.85em;line-height:1.4}
+  .agent-card .status{display:inline-block;font-size:0.78em;padding:2px 10px;border-radius:10px;margin-top:6px}
+  .agent-card .status.active{background:#2ed57322;color:#2ed573;border:1px solid #2ed57333}
+  .agent-card .status.paused{background:#ffa50222;color:#ffa502;border:1px solid #ffa50233}
+  
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+  @media(max-width:600px){.features{grid-template-columns:1fr}}
+  .feature{background:#111120;border:1px solid #1a1a3e;border-radius:10px;padding:16px;transition:.3s}
+  .feature:hover{border-color:#2ed57366;transform:translateY(-2px)}
+  .feature h4{color:#fff;font-size:0.92em;margin-bottom:4px}
+  .feature p{color:#888;font-size:0.83em;line-height:1.4}
+  
+  .tech-stack{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .tech{background:linear-gradient(135deg,#2ed57322,#00d4ff22);border:1px solid #2ed57344;border-radius:16px;padding:5px 14px;font-size:0.82em;color:#ccc}
+  
+  .quote{background:linear-gradient(135deg,#2ed57315,#00d4ff15);border-left:3px solid #2ed573;border-radius:0 12px 12px 0;padding:18px;margin:18px 0;font-style:italic;color:#ccc;font-size:0.9em}
+  .quote b{color:#2ed573}
+  
+  .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  @media(max-width:600px){.result-grid{grid-template-columns:1fr}}
+  .result-item{background:#111120;border:1px solid #1a1a2e;border-radius:10px;padding:14px;text-align:center}
+  .result-item .num{font-size:1.4em;color:#2ed573;font-weight:700}
+  .result-item .lbl{color:#888;font-size:0.82em;margin-top:3px}
+  
+  footer{text-align:center;padding:30px 0;color:#555;font-size:0.88em}
+  a{color:#00d4ff;text-decoration:none}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="/portfolio/" class="back">← На главную</a>
+
+<div class="hero">
+  <h1>🧠 Мультиагентная AI-система</h1>
+  <div class="sub">CEO → AI-Директор → субагенты. Как я построил свою AI-команду</div>
+  <div class="tag">🎯 Управляю бизнесом через Telegram</div>
+</div>
+
+<div class="section-title">💡 Что это и зачем</div>
+
+<div class="block">
+  <p>Представь, что у тебя есть команда ассистентов. Каждый — эксперт в своей области. WB-аналитик, инвестиционный советник, фитнес-наставник, персональный консультант по обучению.</p>
+  <p style="margin-top:8px">Они не просят зарплату, не уходят в отпуск и не нуждаются в 3-месячном онбординге. Они работают 24/7, у каждого — своя память и специализация. И ты управляешь ими через один Telegram-чат.</p>
+  <p style="margin-top:8px">Я построил такую систему для себя. Теперь я CEO, мой основной AI (Директор) — операционный директор, а субагенты — мои профильные помощники.</p>
+</div>
+
+<div class="section-title">🏗 Архитектура</div>
+
+<div class="arch">
+  <h3>CEO → AI-Директор → Субагенты</h3>
+  <div class="arch-level ceo">
+    <h4>👑 Андрей (CEO)</h4>
+    <p>Ставит задачи в Telegram-чате. Не думает о коде, инфраструктуре, деталях. Только стратегия.</p>
+  </div>
+  <div class="arch-arrow">↓</div>
+  <div class="arch-level dir">
+    <h4>🤖 Директор (COO)</h4>
+    <p>Основной AI-ассистент. Принимает задачу, распределяет между субагентами, собирает результат. Правая рука CEO.</p>
+  </div>
+  <div class="arch-arrow">↓</div>
+  <div class="arch-level agent">
+    <h4>🧠 Субагенты (WB, Инвестиции, Фитнес, Образование, Портфолио)</h4>
+    <p>Узкие специалисты. Каждый со своей памятью и инструментами. Запускаются отдельно, отвечают только в своей области.</p>
+  </div>
+</div>
+
+<div class="section-title">🧩 Мои субагенты</div>
+
+<div class="agent-grid">
+  <div class="agent-card">
+    <h4>📦 #wb — WB-аналитик</h4>
+    <p>Анализирует продажи, считает P&L, юнит-экономику. Работает с БД отчётов и себестоимости.</p>
+    <span class="status active">✅ Активен</span>
+  </div>
+  <div class="agent-card">
+    <h4>💰 #invest — Инвестиции</h4>
+    <p>Облигации, фондовый рынок, крипта. Помогает управлять портфелем и сохранять капитал.</p>
+    <span class="status active">✅ Активен</span>
+  </div>
+  <div class="agent-card">
+    <h4>💪 #fitness — Фитнес</h4>
+    <p>Здоровье, энергия, продуктивность. Короткие советы для CEO на каждый день.</p>
+    <span class="status active">✅ Активен</span>
+  </div>
+  <div class="agent-card">
+    <h4>📚 #education — Обучение</h4>
+    <p>Курсы, книги, roadmap обучения. Помогает системно прокачивать знания.</p>
+    <span class="status active">✅ Активен</span>
+  </div>
+  <div class="agent-card">
+    <h4>📋 #portfolio — Портфолио</h4>
+    <p>Кейсы, проекты, идеи для контента. Помогает упаковывать опыт в продающий материал.</p>
+    <span class="status active">✅ Активен</span>
+  </div>
+  <div class="agent-card">
+    <h4>👑 CEO (по умолчанию)</h4>
+    <p>Я сам. Обычные сообщения — Директор отвечает как стратег и COO.</p>
+    <span class="status active">✅ Всегда</span>
+  </div>
+</div>
+
+<div class="section-title">🔧 Как это работает технически</div>
+
+<div class="block">
+  <p>Основная инновация — я построил это на <b>OpenClaw</b>, open-source платформе для AI-агентов:</p>
+  <ul style="margin:10px 0 0 20px;list-style:none;padding:0">
+    <li>🧠 <b>Изолированная память</b> — у каждого агента своя папка brains/, как отдельный мозг. Когда агент не работает, его память не смешивается с другими.</li>
+    <li>🏷️ <b>Переключение по тегам</b> — пишешь <code>#wb</code> или <code>#invest</code> в чат, и контекст переключается на нужного агента. Без меню, без кнопок, без интерфейса — просто текст.</li>
+    <li>💬 <b>Всё в одном чате</b> — все диалоги с любым агентом в одном Telegram-чате. CEO пишет задачу — Директор распределяет.</li>
+    <li>⚡ <b>Голосовой ввод</b> — DeepSeek + Whisper: сказал — AI понял — агент ответил. Три секунды.</li>
+    <li>🛠 <b>Расширение без кода</b> — нужен новый агент? Создаю папку brains/new_agent, настраиваю — готово. Ноль программирования.</li>
+  </ul>
+</div>
+
+<div class="section-title">🎯 Ключевые особенности</div>
+
+<div class="features">
+  <div class="feature">
+    <h4>🧠 Раздельная память</h4>
+    <p>Агенты не путают контекст. WB-аналитик не знает про фитнес, инвест-советник — про отчёты WB.</p>
+  </div>
+  <div class="feature">
+    <h4>🏷️ Управление тегами</h4>
+    <p>Простой текст — CEO. Тег — субагент. Никаких сложных интерфейсов.</p>
+  </div>
+  <div class="feature">
+    <h4>⚡ Мгновенное переключение</h4>
+    <p>Написал #wb — через секунду отвечает WB-аналитик. Написал без тега — отвечаю я как COO.</p>
+  </div>
+  <div class="feature">
+    <h4>🎤 Голосовой ввод</h4>
+    <p>Голосовое сообщение → Whisper транскрибация → DeepSeek анализ → ответ. 3 секунды на цикл.</p>
+  </div>
+  <div class="feature">
+    <h4>📂 Файловая память</h4>
+    <p>Каждый агент хранит память в текстовых файлах. Простая структура, никаких сложных БД для памяти.</p>
+  </div>
+  <div class="feature">
+    <h4>🏗 OpenClaw + DeepSeek</h4>
+    <p>Бесплатная open-source платформа + DeepSeek API. Минимум затрат, максимум возможностей.</p>
+  </div>
+</div>
+
+<div class="section-title">📈 Что это даёт бизнесу</div>
+
+<div class="result-grid">
+  <div class="result-item"><div class="num">×3-5</div><div class="lbl">эффективность CEO без найма людей</div></div>
+  <div class="result-item"><div class="num">24/7</div><div class="lbl">работа без перерывов и выходных</div></div>
+  <div class="result-item"><div class="num">0 ₽</div><div class="lbl">зарплата, налоги, больничные</div></div>
+</div>
+
+<div class="section-title">🛠 Стек</div>
+<div class="tech-stack">
+  <span class="tech">OpenClaw</span>
+  <span class="tech">DeepSeek API</span>
+  <span class="tech">Whisper</span>
+  <span class="tech">Telegram Bot API</span>
+  <span class="tech">Linux VPS</span>
+  <span class="tech">Git</span>
+</div>
+
+<div class="quote">
+  «Субагенты — это не про технологии. Это про то, как CEO может <b>управлять бизнесом через один Telegram-чат</b>, не нанимая 5 человек, не держа в голове 10 разных контекстов, не теряя время на переключение между задачами.<br><br>
+  CEO ставит задачу. AI распределяет. Агенты делают. CEO получает результат.»<br><br>
+  CEO → AI-Директор → субагенты. Простая архитектура. Мощный результат.
+</div>
+
+<div style="text-align:center;padding:20px 0">
+  <a href="/portfolio/" style="display:inline-block;padding:12px 28px;border-radius:25px;background:linear-gradient(135deg,#2ed573,#00d4ff);color:#fff;font-weight:700;text-decoration:none">← Назад в портфолио</a>
+</div>
+
+<footer>
+  <p>📬 <a href="https://t.me/Andreizarubo">@Andreizarubo</a></p>
+  <p style="margin-top:4px;font-size:0.75em;color:#444">AI-автоматизация для тех, кто хочет зарабатывать больше, работая меньше</p>
+</footer>
+
+</div>
+</body>
+</html>

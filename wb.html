@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Андрей Зарубо — Кейс: AI-аналитика Wildberries</title>
+<meta name="description" content="Андрей Зарубо — AI-автоматизация для бизнеса на Wildberries. P&L, юнит-экономика, мультиагентные AI-системы. 4+ года на WB.">
+<meta name="keywords" content="AI автоматизация, Wildberries аналитика, P&L Wildberries, юнит-экономика, AI агенты, Telegram бот, DeepSeek">
+<meta name="author" content="Андрей Зарубо">
+<meta property="og:title" content="Андрей Зарубо — AI-автоматизация бизнеса">
+<meta property="og:description" content="AI-аналитика для Wildberries. P&L, юнит-экономика, мультиагентные системы. 4+ года на WB.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hegimeyutig.beget.app/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Андрей Зарубо",
+  "description": "AI-управленец. Автоматизация бизнеса на Wildberries через AI-агентов.",
+  "url": "https://hegimeyutig.beget.app/portfolio/",
+  "knowsAbout": ["AI", "Wildberries", "Python", "PostgreSQL", "Telegram Bot API"]
+}
+</script>
+<title>Андрей Зарубо — Кейс: WB Mini App</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.7}
+  .container{max-width:800px;margin:0 auto;padding:40px 24px;position:relative;z-index:1}
+  .back{display:inline-block;color:#7b2ff7;margin-bottom:24px;font-size:0.95em}
+  .back:hover{text-decoration:underline}
+  
+  .hero{text-align:center;padding:20px 0 30px}
+  .hero h1{font-size:2em;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+  .hero .sub{color:#888;font-size:1em}
+  .hero .tag{display:inline-block;padding:6px 18px;border:1px solid #7b2ff744;border-radius:20px;color:#7b2ff7;font-size:0.9em;margin-top:10px}
+  
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+  @media(max-width:600px){.stats{grid-template-columns:1fr}}
+  .stat{background:#111120;border:1px solid #1a1a2e;border-radius:10px;padding:16px;text-align:center}
+  .stat .num{font-size:1.3em;color:#00d4ff;font-weight:700}
+  .stat .lbl{color:#888;font-size:0.82em;margin-top:4px}
+  
+  .section-title{font-size:1.2em;color:#00d4ff;margin:32px 0 14px;border-bottom:1px solid #1a1a2e;padding-bottom:8px}
+  
+  .block{background:#111120;border:1px solid #1a1a2e;border-radius:12px;padding:22px;margin:14px 0}
+  .block p{color:#bbb;margin-top:8px}
+  .block p:first-child{margin-top:0}
+  
+  ul{margin:10px 0 0 0;list-style:none;padding:0}
+  ul li{padding:8px 0;border-bottom:1px solid #1a1a2e;color:#aaa;font-size:0.92em}
+  ul li:last-child{border-bottom:none}
+  ul li b{color:#fff}
+  
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+  @media(max-width:600px){.features{grid-template-columns:1fr}}
+  .feature{background:#111120;border:1px solid #1a1a3e;border-radius:10px;padding:16px;transition:.3s}
+  .feature:hover{border-color:#7b2ff766;transform:translateY(-2px)}
+  .feature .icon{font-size:1.3em;margin-bottom:6px}
+  .feature h4{color:#fff;font-size:0.92em;margin-bottom:4px}
+  .feature p{color:#888;font-size:0.83em;line-height:1.4}
+  
+  .screens{display:flex;gap:16px;margin:18px 0;overflow-x:auto;padding:10px 0;scrollbar-width:thin;scrollbar-color:#7b2ff744 transparent}
+  .screen{flex:0 0 auto;width:300px;background:#111120;border:1px solid #1a1a2e;border-radius:12px;overflow:hidden}
+  .screen img{width:100%;display:block}
+  .screen p{padding:8px 12px;color:#aaa;font-size:0.83em;text-align:center}
+  
+  .result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:14px 0}
+  .result-item{background:#111120;border:1px solid #1a1a2e;border-radius:10px;padding:14px;text-align:center}
+  .result-item .num{font-size:1.5em;color:#2ed573;font-weight:700}
+  .result-item .lbl{color:#888;font-size:0.82em;margin-top:3px}
+
+  .stages{display:flex;flex-direction:column;gap:10px;margin:14px 0}
+  .stage{background:#111120;border-left:3px solid #7b2ff7;border-radius:8px;padding:14px 18px}
+  .stage h4{color:#fff;font-size:0.95em}
+  .stage p{color:#999;font-size:0.88em;margin-top:4px}
+  .stage .date{color:#7b2ff7;font-size:0.8em;font-weight:600}
+  
+  .tech-stack{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+  .tech{background:linear-gradient(135deg,#00d4ff22,#7b2ff722);border:1px solid #7b2ff744;border-radius:16px;padding:5px 14px;font-size:0.82em;color:#ccc}
+  
+  .quote{background:linear-gradient(135deg,#7b2ff715,#00d4ff15);border-left:3px solid #7b2ff7;border-radius:0 12px 12px 0;padding:18px;margin:18px 0;font-style:italic;color:#ccc;font-size:0.9em}
+  .quote b{color:#7b2ff7}
+  
+  footer{text-align:center;padding:30px 0;color:#555;font-size:0.88em}
+  a{color:#00d4ff;text-decoration:none}
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="/portfolio/" class="back">← На главную</a>
+
+<div class="hero">
+  <h1>📦 Wildberries: AI-аналитика</h1>
+  <div class="sub">Как я построил P&amp;L для своего бизнеса — и превратил это в продукт</div>
+  <div class="tag">⚡ 5 секунд вместо 4 часов Excel</div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="num">4+</div><div class="lbl">года на Wildberries</div></div>
+  <div class="stat"><div class="num">5 сек</div><div class="lbl">полный анализ отчёта WB</div></div>
+  <div class="stat"><div class="num">1</div><div class="lbl">человек = вся система</div></div>
+</div>
+
+<div class="section-title">🧠 Что я сделал</div>
+
+<div class="block">
+  <p>Я построил инструмент, который делает за 5 секунд то, на что раньше уходили часы.</p>
+  <p style="margin-top:8px">Загружаешь стандартный отчёт Wildberries (XLSX) — AI разбирает 2000+ строк, считает комиссии, логистику, налоги УСН 6%, себестоимость — и выдаёт полную P&amp;L с юнит-экономикой по каждому товару.</p>
+  <p style="margin-top:8px">Всё работает через Telegram-бота и веб-приложение. С голосовым вводом — спросил «прибыль по 27D2» — получил ответ за 3 секунды.</p>
+</div>
+
+<div class="section-title">📱 Как это выглядит</div>
+
+<div class="screens">
+  <div class="screen"><img src="screen1.svg" alt="Дашборд"><p>📊 Главный дашборд — общая картина бизнеса</p></div>
+  <div class="screen"><img src="screen2.svg" alt="P&L товара"><p>🧮 P&amp;L и юнит-экономика по каждому товару</p></div>
+  <div class="screen"><img src="screen3.svg" alt="Голосовой AI"><p>🎤 AI-ассистент с голосовым вводом</p></div>
+</div>
+
+<div class="section-title">⚙️ Как это работает</div>
+
+<div class="features">
+  <div class="feature">
+    <div class="icon">📁</div>
+    <h4>Загрузка XLSX</h4>
+    <p>Скачал отчёт WB — загрузил в бота через Telegram или веб-интерфейс. AI парсит всё сам.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">💰</div>
+    <h4>Полная P&amp;L</h4>
+    <p>Выручка → комиссия WB → логистика → себестоимость → налог УСН 6% → чистая прибыль.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">🧮</div>
+    <h4>Юнит-экономика</h4>
+    <p>Маржинальность, ROI, прибыль на единицу по каждому артикулу. Видно, что тащит, а что в минус.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">💾</div>
+    <h4>Сохранение расходов</h4>
+    <p>Себестоимость, внешние расходы (упаковка, реклама) — сохраняются в БД, не нужно вводить заново.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">🎤</div>
+    <h4>Голосовой AI-ввод</h4>
+    <p>DeepSeek + Whisper. Спросил — ответ за 3 секунды. Без клавиатуры, без меню.</p>
+  </div>
+  <div class="feature">
+    <div class="icon">📊</div>
+    <h4>Графики</h4>
+    <p>Продажи по дням, динамика прибыли, структура расходов — всё в веб-приложении.</p>
+  </div>
+</div>
+
+<div class="section-title">📈 Результат</div>
+
+<div class="result-grid">
+  <div class="result-item"><div class="num">5 сек</div><div class="lbl">вместо 3-4 часов на отчёт</div></div>
+  <div class="result-item"><div class="num">100%</div><div class="lbl">точность расчётов</div></div>
+  <div class="result-item"><div class="num">15%</div><div class="lbl">рост чистой прибыли</div></div>
+  <div class="result-item"><div class="num">24/7</div><div class="lbl">работает без меня</div></div>
+</div>
+
+<div class="section-title">🛤 Этапы развития</div>
+
+<div class="stages">
+  <div class="stage">
+    <div class="date">🔹 Этап 1</div>
+    <h4>Ручной Excel</h4>
+    <p>Скачивал отчёты WB, считал через формулы. 3-4 часа в месяц, ошибки, путаница с налогами. Не видел реальной картины по каждому товару.</p>
+  </div>
+  <div class="stage">
+    <div class="date">🔹 Этап 2 — текущий</div>
+    <h4>AI-автоматизация через бота + Mini App</h4>
+    <p>Загружаю XLSX → P&amp;L + юнит-экономика за 5 секунд. Голосовой AI-ввод. Себестоимость в БД. Вижу бизнес прозрачно.</p>
+  </div>
+  <div class="stage">
+    <div class="date">🔹 Этап 3 — в планах</div>
+    <h4>Автоматический сбор отчётов по API WB</h4>
+    <p>Ручная загрузка → автоматическая синхронизация. Система сама тянет данные, считает, отправляет уведомления.</p>
+  </div>
+</div>
+
+<div class="section-title">🛠 Стек</div>
+<div class="tech-stack">
+  <span class="tech">DeepSeek AI</span>
+  <span class="tech">Python 3.10</span>
+  <span class="tech">PostgreSQL 16</span>
+  <span class="tech">Telegram Bot API</span>
+  <span class="tech">Whisper (голос)</span>
+  <span class="tech">Nginx + Let's Encrypt</span>
+  <span class="tech">Linux VPS (2 сервера)</span>
+</div>
+
+<div class="quote">
+  «Я не программист. Я предприниматель, который автоматизировал то, что должен делать любой CEO — <b>знать цифры своего бизнеса и управлять ими</b>.»<br><br>
+  Всё собрано через AI: DeepSeek объяснял код, настраивал сервер, писал SQL-запросы. Ноль найма — 100% результат.
+</div>
+
+<div style="text-align:center;padding:20px 0">
+  <a href="/portfolio/" style="display:inline-block;padding:12px 28px;border-radius:25px;background:linear-gradient(135deg,#7b2ff7,#00d4ff);color:#fff;font-weight:700;text-decoration:none">← Назад в портфолио</a>
+</div>
+
+<footer>
+  <p>📬 <a href="https://t.me/Andreizarubo">@Andreizarubo</a></p>
+  <p style="margin-top:4px;font-size:0.75em;color:#444">AI-автоматизация для тех, кто хочет зарабатывать больше, работая меньше</p>
+</footer>
+
+</div>
+</body>
+</html>
